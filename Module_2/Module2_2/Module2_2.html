@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Module2_2</title>
+    <script src="Module2_2.js"></script>
+</head>
+<body>
+<ol id="namelist"></ol>
+<script>
+    let namelist = document.getElementById('namelist')
+
+    for (let i=0; i<names.length; i++) {
+        let name = document.createElement('li');
+        name.textContent = names.sort()[i];
+        namelist.appendChild(name);
+    }
+</script>
+
+</body>
+</html>
